@@ -21,6 +21,7 @@ import "react-toastify/dist/ReactToastify.css";
 const MailForm = () => {
   const { form, onSubmit } = useMailForm();
 
+  //成功時に発火
   useEffect(() => {
     if (form.formState.isSubmitSuccessful) {
       toast.success("メール送信に成功しました！");
